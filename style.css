@@ -455,7 +455,22 @@ section .title::after{
     pointer-events: none;
   
 }
-
+.container .box span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px ;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 05);
+}
 .container .box:hover #first::before 
 {
     top: -80px;
@@ -467,7 +482,23 @@ section .title::after{
     background-position: center;
 }
 
-
+.container .box span::after
+{
+    content: '';
+    position: absolute;
+    bottom:  0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px ;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 05);
+    animation-delay: -1s;
+}
 
 .container .box:hover #first::after
 {
