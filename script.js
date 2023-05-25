@@ -2,56 +2,57 @@ $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
+            $('.navbar').addClass("sticky"); // Agrega la clase "sticky" a la barra de navegación cuando se hace scroll
         }else{
-            $('.navbar').removeClass("sticky");
+            $('.navbar').removeClass("sticky"); // Quita la clase "sticky" de la barra de navegación cuando se hace scroll
         }
         
         // scroll-up button show/hide script
         if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
+            $('.scroll-up-btn').addClass("show"); // Muestra el botón de scroll hacia arriba cuando se hace suficiente scroll
         }else{
-            $('.scroll-up-btn').removeClass("show");
+            $('.scroll-up-btn').removeClass("show"); // Oculta el botón de scroll hacia arriba cuando se hace poco scroll
         }
     });
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
+        $('html').animate({scrollTop: 0}); // Realiza una animación de desplazamiento hacia arriba cuando se hace clic en el botón de scroll
         // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
+        $('html').css("scrollBehavior", "auto"); // Quita el comportamiento de desplazamiento suave después de hacer clic en el botón de scroll
     });
 
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
+        $('html').css("scrollBehavior", "smooth"); // Aplica nuevamente el desplazamiento suave al hacer clic en los elementos del menú de navegación
     });
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
+        $('.navbar .menu').toggleClass("active"); // Agrega o quita la clase "active" a la lista de menú para mostrar u ocultar el menú
+        $('.menu-btn i').toggleClass("active"); // Agrega o quita la clase "active" al icono del botón del menú para mostrar u ocultar el menú
     });
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Front end developer", "App Developer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
+        strings: ["Front end developer", "App Developer"], // Texto que se muestra en la animación de escritura
+        typeSpeed: 100, // Velocidad de escritura
+        backSpeed: 60, // Velocidad de retroceso
+        loop: true // Repetir la animación en bucle
     });
+
     var typed = new Typed(".typing-3", {
-        strings: ["Connect with me on :)"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: false
+        strings: ["Connect with me on :)"], // Texto que se muestra en la animación de escritura
+        typeSpeed: 100, // Velocidad de escritura
+        backSpeed: 60, // Velocidad de retroceso
+        loop: false // No repetir la animación en bucle
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Front end developer", "App Developer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
+        strings: ["Front end developer", "App Developer"], // Texto que se muestra en la animación de escritura
+        typeSpeed: 100, // Velocidad de escritura
+        backSpeed: 60, // Velocidad de retroceso
+        loop: true // Repetir la animación en bucle
     });
 
     // owl carousel script
@@ -112,12 +113,8 @@ $(document).ready(function(){
                 }, 5000); // 5000 milisegundos (5 segundos)
 
             }, function(error) {
-                //console.log('FAILED...', error);
                 alert('Su mensaje no pudo ser enviado. Por favor, inténtelo de nuevo más tarde :(.');
                 });
         });
     })();
 });
-
-// TOKEN 1//0fJhi2XDdAE_hCgYIARAAGA8SNwF-L9Ir_FRx1l2x9-yCYf3FbcurDcnL30UY5coEdkjWLfSCLX166K2CpgXrtBhqk1AsY9zGDac
-
