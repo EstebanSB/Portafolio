@@ -397,7 +397,7 @@ section .title::after{
 .container .box:nth-child(6):before,
 .container .box:nth-child(6):after
 {
-    background: linear-gradient(315deg,#eecda3 , #ef629f);
+    background: linear-gradient(315deg, #6db1e8, #8e7bcc);
 }
 .container .box .content
 {
