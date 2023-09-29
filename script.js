@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Front end developer", "App Developer"], // Texto que se muestra en la animación de escritura
+        strings: ["Full-Stack developer", "App Developer"], // Texto que se muestra en la animación de escritura
         typeSpeed: 100, // Velocidad de escritura
         backSpeed: 60, // Velocidad de retroceso
         loop: true // Repetir la animación en bucle
@@ -49,7 +49,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Front end developer", "App Developer"], // Texto que se muestra en la animación de escritura
+        strings: ["Full-Stack developer", "App Developer"], // Texto que se muestra en la animación de escritura
         typeSpeed: 100, // Velocidad de escritura
         backSpeed: 60, // Velocidad de retroceso
         loop: true // Repetir la animación en bucle
