@@ -39,7 +39,7 @@ section{
     margin: auto;
 }
 .about{
-    background-color: #1b1a1a;
+    background-color: #111;
 }
 .about, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -97,7 +97,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: #111;
+    background: #222;
 }
 .navbar .max-width{
     display: flex;
@@ -142,7 +142,7 @@ section .title::after{
 /*********** MENU BTN ************/
 .menu-btn{
     color: #fff;
-    font-size: 23px;
+    font-size: 30px;
     cursor: pointer;
     display: none;
 }
@@ -353,13 +353,13 @@ section .title::after{
 
 .btn:hover{
     color: white;
-     background: crimson;
- 
+    background: crimson;
 }
   
 .btn--block {
     display: block;
     width: 100%;
+    background-color: transparent;
 }
    
 .cards {
@@ -368,9 +368,10 @@ section .title::after{
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
   
-  .cards__item {
+.cards__item {
     display: flex;
     padding: 1rem;
     @media(min-width: 40rem) {
@@ -379,11 +380,11 @@ section .title::after{
     @media(min-width: 56rem) {
       width: 33.3333%;
     }
-  }
+}
   
-  .card {
-    background-color: white;
-    border-radius: 0.25rem;
+.card {
+    background-color: #222;
+    border-radius: 6px;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
     display: flex;
     flex-direction: column;
@@ -393,16 +394,16 @@ section .title::after{
         filter: contrast(100%);
       }
     }
-  }
-  
-  .card__content {
+}
+
+.card__content {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
     padding: 1rem;
-  }
+}
   
-  .card__image {
+.card__image {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -425,42 +426,79 @@ section .title::after{
     }
   }
   
-  .card__image--flowers {
-    background-image: url(https://unsplash.it/800/600?image=82);
-  }
+.card__image--serevena{
+    background-image: url(https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+}
   
-  .card__image--river {
-    background-image: url(https://unsplash.it/800/600?image=11);
-  }
+.card__image--weather {
+    background-image: url(https://plus.unsplash.com/premium_photo-1664303017917-71ebeb42343d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80);
+}
   
-  .card__image--record {
-    background-image: url(https://unsplash.it/800/600?image=39);
-  }
+.card__image--portafolio {
+    background-image: url(https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+}
   
-  .card__image--fence {
-    background-image: url(https://unsplash.it/800/600?image=59);
-  }
+.card__image--rick {
+    background-image: url(https://images.unsplash.com/photo-1592564630984-7410f94db184?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UmljayUyNk1vcnR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+}
+.card__image--bomberos {
+    background-image: url(https://images.unsplash.com/photo-1554256092-96709174126a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
+}
+.card__image--github {
+    background-image: url(https://images.unsplash.com/photo-1630514969818-94aefc42ec47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+}
   
   .card__title {
-    color: #444444;
+    color: #fff;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
   
-  .card__text {
+.card__text {
+    padding-top: 5px;
     font-family: 'Poppins', sans-serif;
-    color: #111;
+    color: #fafafa;
     flex: 1 1 auto;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
-  }
+}
+
+.card__btn{
+    display: inline-block;
+    /* background: crimson; */
+    color: crimson;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    align-items: center;
+}
+.card__btn:hover{
+    color: white;
+    background: crimson;
+}
 /*********** FIN SECCION PROYECTOS ***********/
 
 
 /*********** SECCION CONTACTO ***********/
+.contact{
+    background-color: #111;
+}
+.contact .contact-text{
+    color: #fff;
+}
+.contact .icons .head{
+    color: #fff;
+}
+.contact .text{
+    color: #fff;
+}
 input,textarea
 {
     caret-color: red;
@@ -495,7 +533,7 @@ input,textarea
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #999;
 }
 .contact .right form .fields{
     display: flex;
@@ -538,6 +576,7 @@ input,textarea
   align-items: center;
 }
 .right form .button-area button{
+    background-color: transparent;
   color: crimson;
   display: block;
   width: 160px!important;
@@ -562,7 +601,7 @@ footer
 {
     position: relative;
     width: 100%;
-    background: #262626;
+    background: #1b1a1a;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -739,7 +778,7 @@ footer p a:hover
         font-size: 32px;
     }
     .home .home-content a{
-        font-size: 20px;
+        font-size: 23px;
     }
     .classbox
     {
